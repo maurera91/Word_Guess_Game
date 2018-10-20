@@ -1,0 +1,131 @@
+<!Doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SNL Hangman</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    
+</head>
+<body>
+        <div class="jumbotron">
+                <h1 class="text-center">
+                  <strong>SNL Hangman</strong>
+                </h1>
+                <hr>
+                <div id="Logo" class="text-center">
+                    <img src = "https://img.nbc.com/sites/nbcunbc/files/files/images/2017/4/27/2015_0902_SNL-About-1920x1080-02_NW.jpeg?impolicy=nbc_com&imwidth=960&imdensity=1"
+                    style: height="200px">
+                </div>    
+        </div>
+    <div class = "container">
+        <div class = "row">
+            <div class="col-lg-6">
+                    <div class="card">
+                        <h4 class="card-header">Who's That Cast Member?</h4>
+                        <h6 class="card-header">Start Typing To Guess!</h6>
+                         <div class="card-body text-center" id="name">
+
+                               
+                            </div>
+                        </div>
+                    
+
+                    <div class="card">
+                        <h4 class="card-header">Guesses</h4>
+                        <div class="card-body">
+                            <div class="text-center d-flex flex-row" id="guesses">
+                                   
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h4 class="card-header">Turns Left</h4>
+                        <div class="card-body">
+                            <div class="text-center" id="turns">
+
+                                   
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="Reset" class="card">
+                        <h4 class="card-header">Reset</h4>
+                        <div class="card-body">
+                            <div class="text-center">
+                                <button class="btn btn-dark btn-lg reset-button">
+                                    RESET
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="display">
+                    <div class = "hangman">
+                        <div id="head" style="height: 100px; width: 100px; background-color: #555;border-radius: 50%; position: relative; left: 50%; opacity: 0;"></div>
+                        <div id="body" style=" height: 200px;border-left: 1px solid #555; position: relative; left: 59%; opacity: 0;"></div>
+                        <div id="right-arm" style= "width: 200px;
+                        border-top: 1px solid ;
+                        -webkit-transform: rotate(-45deg);
+                        -moz-transform: rotate(-45deg);
+                        -o-transform: rotate(-45deg);
+                        -ms-transform: rotate(-45deg);
+                        transform: rotate(-45deg);
+                        position: absolute;
+                        top: 30%;
+                        left: 53%;
+                        opacity: 0;"></div>
+                        <div id="left-arm" style= "width: 200px;
+                        border-top: 1px solid ;
+                        -webkit-transform: rotate(45deg);
+                        -moz-transform: rotate(45deg);
+                        -o-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                        position: absolute;
+                        top: 30%;
+                        left: 29%;
+                        opacity: 0;"></div>
+                        <div id="right-leg" style=" width: 200px;
+                        border-top: 1px solid ;
+                        -webkit-transform: rotate(45deg);
+                        -moz-transform: rotate(45deg);
+                        -o-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                        position: absolute;
+                        top: 80%;
+                        left: 53.5%;
+                        opacity: 0;"></div>
+                        <img id="left-leg" style= "width: 200px;
+                        border-top: 1px solid ;
+                        -webkit-transform: rotate(-45deg);
+                        -moz-transform: rotate(-45deg);
+                        -o-transform: rotate(-45deg);
+                        -ms-transform: rotate(-45deg);
+                        transform: rotate(-45deg);
+                        position: absolute;
+                        top: 80%;
+                        left: 29%;
+                        opacity: 0;"></div>
+
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+        <script src="assets/javascript/main.js"></script>
+</body>
+</html>
