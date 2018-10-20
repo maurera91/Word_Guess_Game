@@ -104,7 +104,7 @@ var bodyParts = function(){
 
             //alerts if you win!
             if(rand == blank){
-                alert("Congrats you won!")
+                alert("Congrats you won! Press Reset to play again!")
             }
             
             
